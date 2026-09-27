@@ -58,6 +58,9 @@
   .contact span { display: inline-block; width: 130px; color: var(--muted); }
   footer { padding: 32px 0 48px; color: var(--muted); font-size: 14px; border-top: 1px solid var(--line); }
   @media (max-width: 600px) {
+    nav .name { display: none; }
+    nav .wrap { justify-content: center; }
+    nav .links { gap: 14px; }
     h1 { font-size: 32px; }
     .grid { grid-template-columns: 1fr; }
     .contact span { display: block; width: auto; }
@@ -70,6 +73,7 @@
   <div class="wrap">
     <a class="name" href="#">Bui Duc Minh Cao</a>
     <div class="links">
+      <a href="#experience">Experience</a>
       <a href="#projects">Projects</a>
       <a href="#skills">Skills</a>
       <a href="#education">Education</a>
@@ -99,6 +103,20 @@
       <div class="card"><h3>Applied mathematical modelling</h3><p>Describing real systems with equations, then solving and testing the model.</p></div>
       <div class="card"><h3>Finance</h3><p>Corporate finance, investment analysis, and portfolio performance and risk.</p></div>
       <div class="card"><h3>Communicating results</h3><p>Reports and presentations that turn model output into clear recommendations.</p></div>
+    </div>
+  </section>
+
+  <section id="experience">
+    <h2>Experience</h2>
+    <div class="project">
+      <h3>Financial Analysis Intern</h3>
+      <p class="meta">Vinatex International JSC, Hanoi · Oct 2024 – Feb 2025</p>
+      <ul>
+        <li>Supported month-end financial reporting and period-close activities</li>
+        <li>Delivered ratio analysis (liquidity, profitability, efficiency, leverage) and trend analysis to inform management reviews and KPI tracking</li>
+        <li>Standardised calculation templates in Excel and documented methods in Word</li>
+      </ul>
+      <div class="tags"><span class="tag">Excel</span><span class="tag">Financial reporting</span><span class="tag">Ratio analysis</span></div>
     </div>
   </section>
 
@@ -139,7 +157,7 @@
     <div class="grid">
       <div class="card">
         <h3>Technical</h3>
-        <div class="tags"><span class="tag">Microsoft Excel (advanced)</span><span class="tag">R / RMarkdown</span><span class="tag">Python</span><span class="tag">SQL</span><span class="tag">HTML</span><span class="tag">LaTeX</span><span class="tag">Word</span><span class="tag">PowerPoint</span></div>
+        <div class="tags"><span class="tag">Microsoft Excel (advanced)</span><span class="tag">R / RMarkdown</span><span class="tag">Python (NumPy, Pandas)</span><span class="tag">SQL</span><span class="tag">HTML</span><span class="tag">LaTeX</span><span class="tag">Word</span><span class="tag">PowerPoint</span><span class="tag">Pyomo</span><span class="tag">Gurobi</span><span class="tag">OR-Tools</span></div>
       </div>
       <div class="card">
         <h3>Finance &amp; Analytics</h3>
